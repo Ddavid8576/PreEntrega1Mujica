@@ -31,7 +31,7 @@ function convertir() {
                 alert(`Tu cambio seria ${solPen} $, gracias por usar nuestro servicio`)
             break 
         case "VEF":
-            let bolivares = valor * VES
+            let bolivares = valor * VEF
                 alert(`Tu cambio seria ${bolivares} VEF, gracias por usar nuestro servicio`)
             break
             
