@@ -1,28 +1,38 @@
-const AR = 1035;
+const ARS = 1035;
 const CLP = 952;
-const VES = 38;
+const VEF = 38;
+const COP = 3896;
+const PEN = 3.7;
 
 function convertir() {
     alert ("Bienvenido a nuestra casa de cambio Coder Change");
     let nombre = prompt("estimado cliente, por favor ingrese su nombre");
     alert("bienvenido: " + nombre); 
-    alert("En nuestra casa de cambio podra convertir sus dolares a moneda local, nuestros tipos de cambio: \n AR 1035 \n CLP 952 \n VES 38");
+    alert("En nuestra casa de cambio podra convertir sus dolares a moneda local, nuestros tipos de cambio: \n ARS 1035 \n CLP 952 \n VES 38 \n COP 3896 \n PEN 3.7");
     let valor = parseInt(prompt("ingrese la cantidad en dolares que desea convertir a moneda local"));
-    let divisa = prompt(`Elige la divisa que deseas tener, las opciones serian AR CLP VES`).toUpperCase();
+    let divisa = prompt(`Elige la divisa que deseas tener, las opciones serian ARS CLP COP PEN VEF `).toUpperCase();
 
     switch(divisa){
         
-        case "AR":
-            let pesosAr = valor * AR
+        case "ARS":
+            let pesosAr = valor * ARS
                 alert(`Tu cambio seria ${pesosAr} $, gracias por usar nuestro servicio`)
             break
         case "CLP":
             let pesosClp = valor * CLP
                 alert(`Tu cambio seria ${pesosClp} $, gracias por usar nuestro servicio`)
             break   
-        case "VES":
+        case "COP":
+            let pesosCop = valor * COP
+                alert(`Tu cambio seria ${pesosCop} $, gracias por usar nuestro servicio`)
+            break  
+        case "PEN":
+            let solPen = valor * PEN
+                alert(`Tu cambio seria ${solPen} $, gracias por usar nuestro servicio`)
+            break 
+        case "VEF":
             let bolivares = valor * VES
-                alert(`Tu cambio seria ${bolivares} VES, gracias por usar nuestro servicio`)
+                alert(`Tu cambio seria ${bolivares} VEF, gracias por usar nuestro servicio`)
             break
             
         default:
