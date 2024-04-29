@@ -9,7 +9,7 @@ const PEN = 3.7;
     let nombre = prompt("estimado cliente, por favor ingrese su nombre");
     alert("bienvenido: " + nombre); 
     function convertir() {
-    alert("En nuestra casa de cambio podra convertir sus dolares a moneda local, nuestros tipos de cambio: \n ARS 1035 \n CLP 952 \n VEF 38 \n COP 3896 \n PEN 3.7");
+    alert(`En nuestra casa de cambio podra convertir sus dolares a moneda local, nuestros tipos de cambio: \n ARS ${ARS} \n CLP ${CLP} \n VEF ${VEF} \n COP ${COP} \n PEN ${PEN}`);
     let valor = parseInt(prompt("ingrese la cantidad en dolares que desea convertir a moneda local"));
     let divisa = prompt(`Elige la divisa que deseas tener, las opciones serian ARS CLP COP PEN VEF `).toUpperCase();
 
